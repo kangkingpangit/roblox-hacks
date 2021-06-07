@@ -1,6 +1,5 @@
 -- Sub to MMPro21 on YT
--- Version 1.0.5
--- MM2 GUI Script
+-- Version: 1.0.5
 
 -- Instances:
 
@@ -88,8 +87,8 @@ VynixuGUIButton.Font = Enum.Font.Highway
 VynixuGUIButton.Text = "Vynixu GUI"
 VynixuGUIButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 VynixuGUIButton.TextSize = 27.000
-VynixuGUIButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Neon-Fox/roblox-scripts/main/VynixuMM2"))()
+NAMEOFBUTTONHERE.MouseButton1Down:connect(function()
+	Scripthere
 end)
 
 OwlHubButton.Name = "OwlHubButton"
@@ -98,11 +97,11 @@ OwlHubButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 OwlHubButton.Position = UDim2.new(0.0439999998, 0, 0.591999948, 0)
 OwlHubButton.Size = UDim2.new(0, 168, 0, 34)
 OwlHubButton.Font = Enum.Font.Highway
-OwlHubButton.Text = "Owl Hub"
+OwlHubButton.Text = "Owl Hub (bugged, look in console [F9])"
 OwlHubButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-OwlHubButton.TextSize = 27.000
+OwlHubButton.TextSize = 10.000
 OwlHubButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
+	print('Type this in your browser for Owl Hub: http://gg.gg/OwlHub')
 end)
 
 Credits.Name = "Credits"
