@@ -1,5 +1,6 @@
 -- Sub to MMPro21 on YT
--- Version: 1.0.5
+-- Version 1.0.5
+-- MM2 GUI Script
 
 -- Instances:
 
@@ -87,8 +88,8 @@ VynixuGUIButton.Font = Enum.Font.Highway
 VynixuGUIButton.Text = "Vynixu GUI"
 VynixuGUIButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 VynixuGUIButton.TextSize = 27.000
-NAMEOFBUTTONHERE.MouseButton1Down:connect(function()
-	Scripthere
+VynixuGUIButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Neon-Fox/roblox-scripts/main/VynixuMM2"))()
 end)
 
 OwlHubButton.Name = "OwlHubButton"
@@ -97,11 +98,23 @@ OwlHubButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 OwlHubButton.Position = UDim2.new(0.0439999998, 0, 0.591999948, 0)
 OwlHubButton.Size = UDim2.new(0, 168, 0, 34)
 OwlHubButton.Font = Enum.Font.Highway
-OwlHubButton.Text = "Owl Hub (bugged, look in console [F9])"
+OwlHubButton.Text = "Owl Hub"
 OwlHubButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-OwlHubButton.TextSize = 10.000
+OwlHubButton.TextSize = 27.000
 OwlHubButton.MouseButton1Down:connect(function()
-	print('Type this in your browser for Owl Hub: http://gg.gg/OwlHub')
+	local old
+old = hookfunction(game.HttpGetAsync, function(inst, url, state)
+  url = url:gsub('CriShoux', 'SiLeNSwOrD')
+  return old(inst, url, state)
+end)
+
+local old2
+old2 = hookfunction(game.HttpGet, function(inst, url, state)
+  url = url:gsub('CriShoux', 'SiLeNSwOrD')
+  return old2(inst, url, state)
+end)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SiLeNSwOrD/OwlHub/master/OwlHub.txt"))()
 end)
 
 Credits.Name = "Credits"
