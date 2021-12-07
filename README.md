@@ -14,6 +14,6 @@ Click Inject/Attach or whatever and give it 15 seconds. Once you are done click 
 
 # Thanks for reading!
 
-If you need more help contact me on Discord: MMarkosPro21_YT#5638
+If you need more help contact me on Discord: Meowflow_YT_Quack#5638
 
 Have a nice day! :D
